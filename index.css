@@ -11,15 +11,13 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    flex-direction: row; 
-    float: right;
     right: 10px;
     top: 10px;
     z-index: 1;
     
 }
 
-li a {
+a {
     text-decoration: none;
     padding: 10px 35px;
     font-size: 20px;
@@ -38,7 +36,7 @@ li a {
     font-size: 40px;
 }
 
-.hire-us-nav a {
+.hire-us-nav {
     background-color: black;
     color: #f9fafc;
     border-radius: 45px;
@@ -90,8 +88,8 @@ li a {
 }
 
 .scroll-link {
-    background-color: #000;
-    color: #f9fafc;
+    background-color: #000 !important;
+    color: #f9fafc !important;
     border-radius: 40px;
     width: 150px;
     border: 1px solid black;
@@ -106,4 +104,63 @@ li a {
     margin-top: 15px;
     font-size: 25px;
 }
+
+@media screen and (max-width: 768px) {
+    
+    html {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .main-header {
+        padding-left: 0px;
+        justify-content: left;
+        display: flex;
+        align-content: flex-start;
+    }
+
+    .main-content {
+        padding-top: 10px;
+    }
+    
+    .circles {
+        display: none;
+    }
+
+    p {
+        margin-bottom: 50px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        display: flex;
+        left: 0px;
+        padding-left: 0px;
+        padding-bottom: 25px;
+        position: relative;
+        top: 10px;
+        padding-right: 0px;
+    }
+
+    .hire-us-nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 35px;
+        padding: 10px 70px;
+    }
+
+    .scroll-link {
+        bottom: 10px;
+        width: 100%;
+        margin: auto; 
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        font-size: 35px;
+        padding: 10px 70px;
+    }
+}
+
+
 
